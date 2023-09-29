@@ -1,0 +1,60 @@
+﻿<Window x:Class="PW_WPF_290923.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PW_WPF_290923"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="b1" Grid.Column="0" Grid.Row="0" Margin="2">
+            <Viewbox>
+                <Label Content="Menu"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="b2" Grid.Column="1" Grid.Row="0" Margin="2">
+            <Viewbox>
+                <Label Content="Back"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="b3" Grid.Column="2" Grid.Row="0" Margin="2">
+            <Viewbox>
+                <Label Content="Settings"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="b4" Grid.Column="3" Grid.Row="0" Margin="2">
+            <Viewbox>
+                <Label Content="Exit"/>
+            </Viewbox>
+        </Button>
+        <Button x:Name="b5" Grid.Column="4" Grid.Row="0" Margin="2">
+            <Viewbox>
+                <Label Content="Help"/>
+            </Viewbox>
+        </Button>
+        
+        <Button x:Name="b6" Grid.Column="5" Grid.Row="0" Margin="267,2,2,0" Grid.ColumnSpan="2" Click="ChangeTranslationClick">
+            <Viewbox>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="\res\Inmages\USAFlag.png" MinWidth="32" MinHeight="32" MaxWidth="48" Margin="0,0,5,0"/>
+                    <TextBlock Text="ENG" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Viewbox>
+        </Button>
+    </Grid>
+</Window>
